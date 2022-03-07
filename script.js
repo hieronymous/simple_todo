@@ -1,10 +1,14 @@
-// hidden search icon Traversy Project
-const search = document.querySelector('.search')
-const btn = document.querySelector('.btn')
-const input = document.querySelector('.input')
+// to-do list practice
 
-btn.addEventListener('click', () => {
-    search.classList.toggle('active')
-    input.classList.toggle('surprise')
-    input.focus()
+let addToDoButton = document.getElementById('addToDo')
+let toDoContainer = document.getElementById('toDoContainer')
+let inputField = document.getElementById('inputField')
+
+addToDoButton.addEventListener('click', function(){
+    var paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph-styling')
+    paragraph.innerText = inputField.value
+    toDoContainer.appendChild(paragraph)
+    inputField.value = '';
 })
+

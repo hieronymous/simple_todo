@@ -1,80 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-* {
-    box-sizing: border-box;
+html, body {
+    background: url(./search.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
 }
 
-body {
-    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
-    font-family: 'Roboto', sans-serif;
-    /* enable flexbox */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* 100% of viewport height */
-    height: 100vh;
-    /* prevents scroll bars displaying */
-    overflow: hidden;
-    margin: 0;
+.container {
+    width: 360px;
+    /* background-color: green; */
+    margin-top: 450px;
 }
 
-.search {
-    position: relative;
-    height: 50px;
-}
-
-.search .input {
-    background-color: #fff;
-    border: 0;
-    font-size: 18px;
-    padding: 15px;
-    height: 50px;
-    width: 50px;
-    transition: width 0.3s ease;
-    -webkit-transition: width 0.3s ease;
-    -moz-transition: width 0.3s ease;
-    -ms-transition: width 0.3s ease;
-    -o-transition: width 0.3s ease;
-}
-
-.btn {
-    background-color: #fff;
-    border: 0;
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 50px;
-    transition: transform 0.3 ease;
-    -webkit-transition: transform 0.3 ease;
-    -moz-transition: transform 0.3 ease;
-    -ms-transition: transform 0.3 ease;
-    -o-transition: transform 0.3 ease;
-}
-
-
- 
- .btn:focus,
- .input:focus {
+#inputField  {
+    background-color: #ddd;
+    width: 300px;
+    height: 46px;
+    border: 1px solid black;
     outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
-.search.active .input {
-    width: 200px;
+#addToDo  {
+    background-color:#ddd;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
-.search.active .btn {
-    transform: translateX(198px);
-    -webkit-transform: translateX(198px);
-    -moz-transform: translateX(198px);
-    -ms-transform: translateX(198px);
-    -o-transform: translateX(198px);
+.to-dos {
+    margin-top: 25px;
 }
 
-.input.surprise {
-    color: yellow;
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 25px;
+    color: goldenrod;
 }
-
-
